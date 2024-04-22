@@ -1,0 +1,261 @@
+body
+{
+    font-family: 'Roboto Slab', serif;
+}
+:root
+{
+    --btnColor:#8E7754;
+    --pColor:#c5b8a4;
+    --afterColor:#554937;
+    --parColor:#7e6d53;
+    --bgColor:#eeeae3;
+}
+/* navbar */
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.icon-arrow
+{
+    position: fixed;
+    bottom: 0;
+    left: 95%;
+    z-index: 999;
+    color: var(--btnColor);
+}
+/* home */
+.home-page
+{
+    background-image: url('../pictures/images/drew-coffman-1872.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.button-1,.button-2
+{
+    transition: all 0.5s ease-in-out;
+    padding: 12px 15px;
+}
+.button-1
+{
+    background-color: var(--btnColor);
+    border: solid 1px var(--btnColor);
+}
+.button-2
+{
+    background-color: transparent;
+    border: solid 1px white;
+}
+ .button-1:hover
+{
+    background-color: transparent;
+    border: solid 1px white;
+}
+.button-2:hover
+{
+    background-color: var(--btnColor);
+    border: solid 1px var(--btnColor);
+} 
+.motion
+{
+    background-color: transparent;
+    height: 13vh;
+    width: 4%;
+    border-radius: 27px;
+    border: 1px solid white;
+}
+.point
+{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: point-motion 2s alternate-reverse linear infinite ;
+}
+@keyframes point-motion
+{
+    0%{transform: translateY(10px);}
+    20%{transform: translateY(20px);}
+    40%{transform: translateY(30px);}
+    60%{transform: translateY(40px);}
+    80%{transform: translateY(50px);}
+    100%{transform: translateY(60px);}
+}
+.position-info p
+{
+    font-size: 130px;
+    color: var(--pColor); 
+}
+.position-info
+{
+    position: relative;
+}
+.about-page .position-info::after 
+{
+    content: 'about';
+    position: absolute;
+    top: 68px;
+    right: 43%;
+    font-size: 55px;
+    color:var(--afterColor);
+}
+.location-page .position-info::after
+{
+    content: 'location';
+    position: absolute;
+    top: 68px;
+    right: 43%;
+    font-size: 55px;
+    color:var(--afterColor);
+}
+.picture img
+{
+    transition: all 0.5s ease-in;
+}
+.picture:hover img
+{
+    transform: scale(1.1);
+}
+.picture-info-1
+{
+    border-bottom-right-radius: 8px;
+}
+.picture-info-1
+{
+    height: 79vh;
+    box-shadow: 6px 6px 12px var(--btnColor);
+}
+.picture-info-2
+{
+    box-shadow: -6px 6px 12px var(--btnColor);
+    border-bottom-left-radius: 8px;
+}
+.picture-info-1 p , .picture-info-2 p
+{
+    color: var(--parColor);
+}
+.picture-info-1 h2 , .picture-info-2 h2
+{
+    color: var(--afterColor);
+}
+.location-page
+{
+    background-color:var(--bgColor);
+}
+
+/* -------our baking-------- */
+.baking-page .position-info::after
+{
+    content: 'our baking';
+    position: absolute;
+    top: 68px;
+    right: 38%;
+    font-size: 55px;
+    color:var(--afterColor);
+}
+.baking-page .pragraph
+{
+    color: var(--afterColor);
+}
+.baking-page .card
+{
+    border: none;
+}
+/* .card
+{
+    animation: img-filter 1s 3s linear alternate;
+}
+@keyframes img-filter
+{
+    0%{filter: blur(5px);}
+    50%{filter: blur(3px);}
+    100%{filter: blur(0px);}
+} */
+/* --------contact us------- */
+.contact-page
+{
+    background-color: var(--bgColor);
+}
+.contact-page .position-info::after
+{
+    content: 'contact us';
+    position: absolute;
+    top: 68px;
+    right: 38%;
+    font-size: 60px;
+    color:var(--afterColor);
+}
+.contact-info ul li
+{
+    list-style: none;
+    line-height: 25px;
+}
+.contact-info
+{
+    height: 450px;
+    box-shadow: -6px 6px 12px var(--btnColor);
+    border-bottom-left-radius: 8px;
+}
+.contact-info i, h2, .contact-info .prgrph
+{
+    color: var(--afterColor);
+}
+.contact-info .prgrph
+{
+    font-size: 25px;
+}
+.contact-info p,li
+{
+    color: var(--parColor);
+}
+
+/* -------------- details----------- */
+.details-page
+{
+    background-color: var(--afterColor);
+}
+.details-page h4
+{
+    color: var(--pColor);
+}
+.details-page p , .details-page hr
+{
+    color: var(--bgColor);
+}
+.box-card
+{
+    background-image: url(../pictures/images/contact-details-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ---------footer--------- */
+footer
+{
+    background-color:#796e5c;
+    
+}
+.info
+{
+    background-image: url('../pictures/images/bakery-light-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+}
+.icon div
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5e4b30;
+    color: var(--pColor);
+    transition: all 0.5s ease-out 0.2s;
+}
+.icon div:hover
+{
+    transform: rotate(360deg) scale(1.3);
+}
